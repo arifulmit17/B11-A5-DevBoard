@@ -21,12 +21,14 @@
   font-weight: 400;
   font-style: normal;
 }
+
+
 </style>
 
 </head>
-<body class="poppins-regular">
+<body class="poppins-regular bg-cyan-200">
     <header class="w-11/12 mx-auto">
-        <nav >
+        <nav class="bg-white" >
             <div class="flex justify-between border border-black">
                 
                 <div id="dev-logo">
@@ -42,8 +44,130 @@
             </div>
         </nav>
     </header>
-    <main>
+    <main class="flex w-11/12 gap-6 mx-auto border border-black">
+        <!--All cards section -->
+        <div class="w-3/4 mx-auto border border-black">
+            <!-- Top card container -->
+            <div class="grid bg-white grid-cols-4">
+                <div id="task-tab" class="bg-[#F4F7FF] flex items-center justify-center" > 
+                    <div>
+                        <img src="./assets/checkbox.png" alt="">
+                    </div>
+                    <div>
+                        <h1>Task Assigned </h1>
+                        <h1>05</h1>
+                    </div>
+                </div>
+                <!-- discover tab -->
+                <div class="flex items-center col-span-2 bg-gradient-to-tr from-blue-500 to-cyan-500 ">
+                    <div>
+                        <img src="./assets/board.png" alt="">
+                    </div>
+                    
+                    <div class="text-white">
+                        <h1 class="text-2xl font-medium">Discover Something New Today!</h1>
+                    </div>
+                </div>
+                <!-- date tab -->
+                <div class="flex items-center justify-center bg-[#F4F7FF]">
+                    <div>
+                        <img src="./assets/calender.png" alt="">
+                    </div>
+                    <div>
+                        <h1>fri,<br> feb 28 2025</h1>
+                    </div>
+                </div>
+            </div>
+            <!-- Bottom card container -->
+             <div class="border-t border-dashed grid gap-6 grid-cols-3">
+                <!-- card 1 -->
+                <div class="bg-[#F4F7FF] rounded-2xl h-[310px]  border border-blue-950 ">
+                    <div class="m-6 h-8/10 flex flex-col justify-between border border-blue-950">
+                        <div class="bg-white rounded-lg w-1/3 h-10 flex justify-center items-center text-base font-normal border border-blue-950">ShopEase</div>
+                        <div class="text-2xl font-medium border border-blue-950">Fix Mobile Button Issue </div>
+                        <div class="bg-white rounded-lg w-full h-1/3 overflow-hidden  border border-blue-950  ">
+                            <p class="p-3 truncate text-base font-normal">Debug using Chrome  DevTools <br>,  check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
+                            </div>
+                        <div class="flex justify-between items-center border-t border-dashed border border-blue-950 ">
+                            <div>
+                                <h1 class="font-normal">Deadline</h1>
+                                <h1 class="text-base font-medium">21 March 2025</h1>
+                            </div>
+                            <div>
+                                <button class="btn text-white bg-[#3752FD] text-base font-medium">Completed</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- card-2 -->
+                <div class="bg-[#F4F7FF] rounded-2xl h-[310px]  border border-blue-950 ">
+                    <div class="m-6 h-8/10 flex flex-col justify-between border border-blue-950">
+                        <div class="bg-white rounded-lg w-1/3 h-10 flex justify-center items-center text-base font-normal border border-blue-950">CloudSync</div>
+                        <div class="text-2xl font-medium border border-blue-950">Add Dark Mode </div>
+                        <div class="bg-white rounded-lg w-full h-1/3 overflow-hidden  border border-blue-950  ">
+                            <p class="p-3 truncate text-base font-normal">Store the user's preference in <br> localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
+                            </div>
+                        <div class="flex justify-between items-center border-t border-dashed border border-blue-950 ">
+                            <div>
+                                <h1 class="font-normal">Deadline</h1>
+                                <h1 class="text-base font-medium">21 March 2025</h1>
+                            </div>
+                            <div>
+                                <button class="btn text-white bg-[#3752FD] text-base font-medium">Completed</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- card-3 -->
+                <div class="bg-[#F4F7FF] rounded-2xl">
+                    <div class="bg-white rounded-lg">ShopEase</div>
+                    <div>Fix Mobile Button Issue </div>
+                    <div class="bg-white rounded-lg">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                        and ensure onClick works properly</div>
+                    <div>
+                        <div>
+                            <h1>Deadline</h1>
+                            <h1>21 March 2025</h1>
+                        </div>
+                        <div>
+                            <button class="btn text-white bg-[#3752FD]">Completed</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- card-4 -->
+                <div class="bg-[#F4F7FF] rounded-2xl">
+                    <div class="bg-white rounded-lg">ShopEase</div>
+                    <div>Fix Mobile Button Issue </div>
+                    <div class="bg-white rounded-lg">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                        and ensure onClick works properly</div>
+                    <div>
+                        <div>
+                            <h1>Deadline</h1>
+                            <h1>21 March 2025</h1>
+                        </div>
+                        <div>
+                            <button class="btn text-white bg-[#3752FD]">Completed</button>
+                        </div>
+                    </div>
+                </div>
+                
+             </div>
+        </div>
+        <!-- Activity logs -->
+        <div class="w-1/4 mx-auto border border-black rounded-2xl bg-white">
+            <div class="border-b border-dashed flex flex-col gap-2 items-center py-3 justify-center">
+                <div class="flex gap-3">
+                    <img src="./assets/activity.png" alt="">
+                    <h1 class="text-xl font-medium">Activity Log</h1>
+                </div>
+                <button class="btn text-white bg-[#3752FD] w-[150px] h-[40px] text-base font-medium">Clear History</button>
+            </div>
+            <div class="w-full h-auto">
 
+            </div>
+        </div>
     </main>
 </body>
 </html>
