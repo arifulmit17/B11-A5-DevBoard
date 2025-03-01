@@ -23,23 +23,25 @@
 }
 
 
+
 </style>
 
 </head>
-<body class="poppins-regular bg-cyan-200">
+<body id="body-theme" class="poppins-regular bg-[#F4F7FF]">
     <header class="w-11/12 mx-auto">
         <nav class="bg-white" >
             <div class="flex justify-between border border-black">
                 
-                <div id="dev-logo">
+                <div id="dev-logo" class="flex gap-2 items-center">
                     <img src="./assets/logo.png" alt="">
+                    <h1>Dev <span class="font-bold">Board</span></h1>
                 </div>
                 <div id="" class="flex w-1/7">
                     <div class="flex gap-1 justify-center items-center w-1/2">
                         <img class="size-4" src="./assets/checkbox.png" alt="">
                         <h1 id="task-counter">23</h1>
                     </div>
-                    <img src="./assets/theme-btn.png" alt="">
+                    <img id="theme-change" class="cursor-pointer" src="./assets/theme-btn.png" alt="">
                 </div>
                 
             </div>
@@ -75,7 +77,7 @@
                         <img src="./assets/calender.png" alt="">
                     </div>
                     <div>
-                        <h1>fri,<br> feb 28 2025</h1>
+                        <h1 id="date-time">fri,<br> feb 28 2025</h1>
                     </div>
                 </div>
             </div>
