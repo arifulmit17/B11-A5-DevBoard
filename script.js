@@ -6,13 +6,13 @@ let dateObj=document.getElementById('date-time');
 dateObj.innerText=currentDate[0]+' , '+'\n'+ currentDate[1] + ' ' + currentDate[2] +' '+currentDate[3];
 
 for(const btn of element){
-    btn.addEventListener('click',function(event){
-        // alert('Board updated successfully')
-        // const btnId= event.target.id;
+    btn.addEventListener('click',function(){
+        
+       
         
         let taskCounter=parseInt(document.getElementById('task-count').innerText) ;
         let navTaskCounter=parseInt(document.getElementById('task-counter').innerText) ;
-        const clickedTarget=event.target.id;
+        
         let date=new Date();
         let date1=date.toLocaleString();
         let date2=date.toString();
@@ -20,22 +20,38 @@ for(const btn of element){
         date2=date2.split(' ');
         const time1=date2[4];
         const time2=date1[2];
-        // console.log(clickedTarget);
+        
         taskCounter-=1;
         navTaskCounter+=1;
-        document.getElementById('task-count').innerText=taskCounter;
+        if(taskCounter>=0){
+            document.getElementById('task-count').innerText=taskCounter;
+        }
+        
         document.getElementById('task-counter').innerText=navTaskCounter;
         document.getElementById(btn.id).classList.add('btn-disabled')
+
+        const cardId=btn.id.split('-');
         const taskName=document.querySelectorAll('.task');
-        // console.log(taskName.id);
+        let taskText='';
+        for(let i=1;i<=taskName.length ;i++){
+            let textElementId=i;
+            if(parseInt(cardId[2])===textElementId){
+                taskText=taskName[i-1].innerText;
+               
+            }
+        }
+        
         const activity=document.getElementById('history-container');
         const p=document.createElement("p");
-        p.classList.add('bg-[#F4F7FF]' , 'rounded-lg','my-6')
-        p.innerText='You have completed the task '+ taskName+ ' at '+time1 +' '+ time2;
+        p.classList.add('bg-[#F4F7FF]' , 'rounded-lg','my-6','p-4','text-base','font-normal')
+        p.innerText='You have completed the task '+ taskText+ ' at '+time1 +' '+ time2;
         
         activity.appendChild(p);
+
+        alert('Board updated successfully');
+
         if(taskCounter===0){
-            alert('All task completed succesfully');
+            alert('Congrats!!! You have completed all the current task');
         }
     })
 }
@@ -59,29 +75,3 @@ document.getElementById('theme-change').addEventListener('click',function(){
 })
 
 
-// element.addEventListener('click', function(event){
-//     console.log(event);
-//     if(event.target.classList.contains('card-btn-1')){
-//         alert('Board updated successfully')
-//         const btnId= event.target.id;
-//         console.log(taskCounter);
-//         let taskCounter=parseInt(document.getElementById('task-count').innerText) ;
-//         let navTaskCounter=parseInt(document.getElementById('task-counter').innerText) ;
-//         taskCounter-=1;
-//         navTaskCounter+=1
-//         document.getElementById('task-count').innerText=taskCounter;
-//         document.getElementById('task-counter').innerText=navTaskCounter;
-//         document.getElementById(btnId).classList.add('btn-disabled')
-//     }
-    
-    
-// })
-
-
-// document.getElementById('card-btn-1').addEventListener('click',function cardButton(event));
-
-
-
-// function cardButton(event){
-    
-// }
