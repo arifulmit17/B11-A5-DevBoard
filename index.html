@@ -34,9 +34,10 @@
                 <div id="dev-logo">
                     <img src="./assets/logo.png" alt="">
                 </div>
-                <div id="task-counter" class="flex ">
-                    <div>
-                        <img src="./assets/checkbox.png" alt="">
+                <div id="" class="flex w-1/7">
+                    <div class="flex gap-1 justify-center items-center w-1/2">
+                        <img class="size-4" src="./assets/checkbox.png" alt="">
+                        <h1 id="task-counter">23</h1>
                     </div>
                     <img src="./assets/theme-btn.png" alt="">
                 </div>
@@ -55,7 +56,7 @@
                     </div>
                     <div >
                         <h1 class="text-base font-medium">Task Assigned </h1>
-                        <h1 class="text-3xl font-bold">05</h1>
+                        <h1 class="text-3xl font-bold" id="task-count">02</h1>
                     </div>
                 </div>
                 <!-- discover tab -->
@@ -65,7 +66,7 @@
                     </div>
                     
                     <div class="text-white">
-                        <h1 class="text-2xl font-medium">Discover Something New Today!</h1>
+                        <h1 id="discover-text" class="text-2xl font-medium">Discover Something New Today!</h1>
                     </div>
                 </div>
                 <!-- date tab -->
@@ -79,12 +80,12 @@
                 </div>
             </div>
             <!-- Bottom card container -->
-             <div class="border-t my-7 mx-3 border-dashed grid gap-6 grid-cols-3">
+             <div id="card-holder" class="border-t my-7 mx-3 border-dashed grid gap-6 grid-cols-3">
                 <!-- card 1 -->
                 <div class="bg-[#F4F7FF] rounded-2xl h-[310px]  border border-blue-950 ">
                     <div class="m-6 h-8/10 flex flex-col justify-between border border-blue-950">
                         <div class="bg-white rounded-lg w-1/3 h-10 flex justify-center items-center text-base font-normal border border-blue-950">ShopEase</div>
-                        <div class="text-2xl font-medium border border-blue-950">Fix Mobile Button Issue </div>
+                        <div id="task-name-1" class="task text-2xl font-medium border border-blue-950">Fix Mobile Button Issue </div>
                         <div class="bg-white rounded-lg w-full h-1/3 overflow-hidden  border border-blue-950  ">
                             <p class="p-3 truncate text-base font-normal">Debug using Chrome  DevTools <br>,  check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
                             </div>
@@ -94,7 +95,7 @@
                                 <h1 class="text-base font-medium">21 March 2025</h1>
                             </div>
                             <div>
-                                <button class="btn text-white bg-[#3752FD] text-base font-medium">Completed</button>
+                                <button id="card-btn-1" class="btn card-btn text-white bg-[#3752FD] text-base font-medium">Completed</button>
                             </div>
                         </div>
                     </div>
@@ -104,7 +105,7 @@
                 <div class="bg-[#F4F7FF] rounded-2xl h-[310px]  border border-blue-950 ">
                     <div class="m-6 h-8/10 flex flex-col justify-between border border-blue-950">
                         <div class="bg-white rounded-lg w-1/3 h-10 flex justify-center items-center text-base font-normal border border-blue-950">CloudSync</div>
-                        <div class="text-2xl font-medium border border-blue-950">Add Dark Mode </div>
+                        <div id="task-name-2" class="task text-2xl font-medium border border-blue-950">Add Dark Mode </div>
                         <div class="bg-white rounded-lg w-full h-1/3 overflow-hidden  border border-blue-950  ">
                             <p class="p-3 truncate text-base font-normal">Store the user's preference in <br> localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
                             </div>
@@ -114,7 +115,7 @@
                                 <h1 class="text-base font-medium">21 March 2025</h1>
                             </div>
                             <div>
-                                <button class="btn text-white bg-[#3752FD] text-base font-medium">Completed</button>
+                                <button id="card-btn-2" class="btn card-btn text-white bg-[#3752FD] text-base font-medium">Completed</button>
                             </div>
                         </div>
                     </div>
@@ -123,7 +124,7 @@
                 <!-- card-3 -->
                 <div class="bg-[#F4F7FF] rounded-2xl">
                     <div class="bg-white rounded-lg">ShopEase</div>
-                    <div>Fix Mobile Button Issue </div>
+                    <div id="task-name">Fix Mobile Button Issue </div>
                     <div class="bg-white rounded-lg">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                         and ensure onClick works properly</div>
                     <div>
@@ -139,7 +140,9 @@
                 <!-- card-4 -->
                 <div class="bg-[#F4F7FF] rounded-2xl">
                     <div class="bg-white rounded-lg">ShopEase</div>
-                    <div>Fix Mobile Button Issue </div>
+                    <div>
+                        <h1 id="task-name">Fix Mobile Button Issue</h1> 
+                    </div>
                     <div class="bg-white rounded-lg">Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
                         and ensure onClick works properly</div>
                     <div>
@@ -162,12 +165,16 @@
                     <img src="./assets/activity.png" alt="">
                     <h1 class="text-xl font-medium">Activity Log</h1>
                 </div>
-                <button class="btn text-white bg-[#3752FD] w-[150px] h-[40px] text-base font-medium">Clear History</button>
+                <button id="activity-clear" class="btn text-white bg-[#3752FD] w-[150px] h-[40px] text-base font-medium">Clear History</button>
             </div>
-            <div class="w-full h-auto">
+            <div  class="w-full h-auto p-6">
+                <div id="history-container">
 
+                </div>
+                
             </div>
         </div>
     </main>
+    <script src="./script.js"></script>
 </body>
 </html>
