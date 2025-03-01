@@ -39,15 +39,16 @@ for(const btn of element){
         }
     })
 }
+document.getElementById('discover-text').addEventListener('click',function(){
+    window.location.href='./blog.html';
+});
 
 document.getElementById('activity-clear').addEventListener('click',function(){
    const historyId= document.getElementById('history-container');
    historyId.innerHTML='';
 });
 
-document.getElementById('discover-text').addEventListener('click',function(){
-    window.location.href='./blog.html';
-});
+
 
 document.getElementById('theme-change').addEventListener('click',function(){
     const theme= document.getElementById('body-theme');
