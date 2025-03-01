@@ -2,7 +2,8 @@ const element=document.getElementsByClassName('card-btn');
 let currentDate=new Date();
 currentDate=currentDate.toString();
 currentDate=currentDate.split(' ');
-document.getElementById('date-time').innerText=currentDate[0]+' , '+ currentDate[1] +' '+ currentDate[2] +' '+currentDate[3];
+let dateObj=document.getElementById('date-time');
+dateObj.innerText=currentDate[0]+' , '+'\n'+ currentDate[1] + ' ' + currentDate[2] +' '+currentDate[3];
 
 for(const btn of element){
     btn.addEventListener('click',function(event){
@@ -17,9 +18,6 @@ for(const btn of element){
         let date2=date.toString();
         date1=date1.split(' ');
         date2=date2.split(' ');
-        console.log(date1)
-        console.log(date2)
-
         const time1=date2[4];
         const time2=date1[2];
         // console.log(clickedTarget);
