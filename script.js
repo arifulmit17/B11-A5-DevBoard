@@ -46,10 +46,10 @@ for(const btn of element){
         
         activity.appendChild(p);
 
-        alert('Board updated successfully');
+        alert('Board updated successfully.');
 
         if(taskCounter===0){
-            alert('Congrats!!! You have completed all the current task');
+            alert('Congrats!!! You have completed all the current task.');
         }
     })
 }
@@ -65,8 +65,8 @@ document.getElementById('activity-clear').addEventListener('click',function(){
 document.getElementById('theme-change').addEventListener('click',function(){
     const theme= document.getElementById('body-theme');
     const red=Math.round(Math.random()*255);
-    const green=parseInt(Math.random()*255);
-    const blue=Math.floor(Math.random()*255);
+    const green=Math.round(Math.random()*255);
+    const blue=Math.round(Math.random()*255);
     theme.style.backgroundColor="rgb("+red+","+green+","+blue+")";
 })
 
