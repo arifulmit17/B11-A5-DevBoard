@@ -19,13 +19,13 @@
 <body class="bg-[#F4F7FF]">
     <header class="w-11/12 mx-auto">
         <nav class="bg-white" >
-            <div class="flex p-5 justify-between border border-black rounded-2xl">
+            <div class="flex p-5 justify-between rounded-2xl">
                 
                 <div id="dev-logo" class="flex gap-2 items-center">
                     <img src="./assets/logo.png" alt="">
                     <h1 class="text-3xl">Dev<span class="font-bold">Board</span></h1>
                 </div>
-                <button id="blog-btn" class="btn rounded-xl text-white bg-[#3752FD] text-base font-medium">Back to Desk</button>
+                <button id="blog-btn" class="btn btn-lg rounded-xl text-white bg-[#3752FD] text-base font-medium">Back to Desk</button>
                 
             </div>
         </nav>
@@ -33,27 +33,29 @@
     <main>
        
         <section id="questions" class="w-11/12 mx-auto ">
-            <h1 class="text-center my-4 font-bold">Blogs</h1>
+            <h1 class="text-center text-3xl my-4 font-bold">Blogs</h1>
             <div class="flex flex-col gap-4">
                 <div class="bg-white rounded-xl ">
-                    <h1 class="p-4 font-medium">Question-1: What are the different ways to select an element in the DOM?</h1>
-                    <p class="p-4 border-t-2 border-gray-300 border-dashed ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, soluta. Animi voluptatum, pariatur minima dolore veniam temporibus perspiciatis accusantium odio laudantium, eum iste harum. Esse laboriosam magnam autem maiores illum!</p>
+                    <h1 class="p-4 text-xl font-medium">Question-1: What are the different ways to select an element in the DOM?</h1>
+                    <p class="p-4 text-lg border-t-2 border-gray-300 border-dashed ">The different ways to select an element in the DOM includes getElementById() method, getElementsByTagName() method, 
+                        querySelector() method, querySelectorAll() and getElementByClassName() methods.</p>
                 </div>
                 <div class="bg-white rounded-xl">
-                    <h1 class="p-4 font-medium">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h1>
-                    <p class="p-4 border-t-2 border-gray-300 border-dashed ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, soluta. Animi voluptatum, pariatur minima dolore veniam temporibus perspiciatis accusantium odio laudantium, eum iste harum. Esse laboriosam magnam autem maiores illum!</p>
+                    <h1 class="p-4 text-xl font-medium">Question-2: What is the difference between innerHTML, innerText, and textContent ?</h1>
+                    <p class="p-4 text-lg border-t-2 border-gray-300 border-dashed ">The innerHTML property reads the html elements as well as the text within them, whereas the innerText property ignores the html elements and returns only the text which is displayed in browser, the textContent property also shows only the text within the html tags but it also shows any hidden text that is not rendered in the browser.</p>
                 </div>
                 <div class="bg-white rounded-xl">
-                    <h1 class="p-4 font-medium">Question-3: What is event delegation in the DOM?</h1>
-                    <p class="p-4 border-t-2 border-gray-300 border-dashed ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, soluta. Animi voluptatum, pariatur minima dolore veniam temporibus perspiciatis accusantium odio laudantium, eum iste harum. Esse laboriosam magnam autem maiores illum!</p>
+                    <h1 class="p-4 text-xl font-medium">Question-3: What is event delegation in the DOM?</h1>
+                    <p class="p-4 text-lg border-t-2 border-gray-300 border-dashed ">Event delegation is a smart way to handle events. Instead of adding eventlistener to every child elements , a single eventlister can be added to the parent element. It works by tracking the target element by using .target property of the event object and triggering the eventlistener when the target element is clicked or some other predefined action is done with it.</p>
                 </div>
                 <div class="bg-white rounded-xl">
-                    <h1 class="p-4 font-medium">Question-4: What is event bubbling in the DOM?</h1>
-                    <p class="p-4 border-t-2 border-gray-300 border-dashed ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, soluta. Animi voluptatum, pariatur minima dolore veniam temporibus perspiciatis accusantium odio laudantium, eum iste harum. Esse laboriosam magnam autem maiores illum!</p>
+                    <h1 class="p-4 text-xl font-medium">Question-4: What is event bubbling in the DOM?</h1>
+                    <p class="p-4 text-lg border-t-2 border-gray-300 border-dashed ">Event bubbling is a process where an event is triggered in a child element and that triggers the ancestor elements up the DOM tree as well. So the event propagates upward from the child to the parent elements.
+                        </p>
                 </div>
                 <div class="bg-white rounded-xl">
-                    <h1 class="p-4 font-medium">Question-5: How do you create, add, and remove elements using JavaScript?</h1>
-                    <p class="p-4 border-t-2 border-gray-300 border-dashed ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos, soluta. Animi voluptatum, pariatur minima dolore veniam temporibus perspiciatis accusantium odio laudantium, eum iste harum. Esse laboriosam magnam autem maiores illum!</p>
+                    <h1 class="p-4 text-xl font-medium">Question-5: How do you create, add, and remove elements using JavaScript?</h1>
+                    <p class="p-4 text-lg border-t-2 border-gray-300 border-dashed ">New elements are created using the createElement() method, newly created elements are added to parent element using appendChild() method.The removeChild() method can be used to remove any child element from the parent node.</p>
                 </div>
             </div>
             

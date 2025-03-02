@@ -1,14 +1,12 @@
-const element=document.getElementsByClassName('card-btn');
 let currentDate=new Date();
 currentDate=currentDate.toString();
 currentDate=currentDate.split(' ');
 let dateObj=document.getElementById('date-time');
 dateObj.innerText=currentDate[0]+' , '+'\n'+ currentDate[1] + ' ' + currentDate[2] +' '+currentDate[3];
 
+const element=document.getElementsByClassName('card-btn');
 for(const btn of element){
     btn.addEventListener('click',function(){
-        
-       
         
         let taskCounter=parseInt(document.getElementById('task-count').innerText) ;
         let navTaskCounter=parseInt(document.getElementById('task-counter').innerText) ;
@@ -63,8 +61,6 @@ document.getElementById('activity-clear').addEventListener('click',function(){
    const historyId= document.getElementById('history-container');
    historyId.innerHTML='';
 });
-
-
 
 document.getElementById('theme-change').addEventListener('click',function(){
     const theme= document.getElementById('body-theme');

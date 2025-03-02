@@ -30,28 +30,31 @@
 <body id="body-theme" class="poppins-regular bg-[#F4F7FF]">
     <header class="w-11/12 mx-auto">
         <nav class="bg-white rounded-2xl" >
-            <div class="flex p-5 justify-between border border-black rounded-2xl">
+            <div class="flex p-5 justify-between rounded-2xl">
                 
                 <div id="dev-logo" class="flex gap-2 items-center">
                     <img src="./assets/logo.png" alt="">
                     <h1 class="text-3xl">Dev<span class=" font-bold">Board</span></h1>
                 </div>
                 <div id="dev-counter" class="flex gap-7  w-1/7">
-                    <div class="flex gap-3 justify-center items-center w-1/2">
+                    <div class="flex  bg-[#F4F7FF] rounded-4xl gap-3 justify-center items-center w-1/2">
                         <img class="size-8" src="./assets/checkbox.png" alt="">
                         <h1 class="text-3xl font-bold" id="task-counter">23</h1>
                     </div>
-                    <img id="theme-change" class="cursor-pointer" src="./assets/theme-btn.png" alt="">
+                    <div class="size-16 rounded-full flex items-center justify-center bg-[#F4F7FF] border border-black">
+                        <img id="theme-change" class="cursor-pointer" src="./assets/theme-btn.png" alt="">
+                    </div>
+                    
                 </div>
                 
             </div>
         </nav>
     </header>
-    <main class="flex mt-6 w-11/12 gap-6 mx-auto border border-black rounded-2xl">
+    <main class="flex mt-6 w-11/12 gap-6 mx-auto  rounded-2xl">
         <!--All cards section -->
-        <div class="w-3/4 mx-auto bg-white border  border-black rounded-2xl">
+        <div class="w-3/4 mx-auto bg-white  rounded-2xl">
             <!-- Top card container -->
-            <div class="grid gap-6 mx-3 bg-white grid-cols-4  rounded-xl">
+            <div class="grid gap-6 mt-5 mx-3 bg-white grid-cols-4  rounded-xl">
                 <div id="task-tab" class="bg-[#F4F7FF] flex gap-4 items-center justify-center" > 
                     <div class="rounded-full flex items-center justify-center size-[60px] bg-white border border-black">
                         <img src="./assets/checkbox.png" alt="">
@@ -207,7 +210,7 @@
              </div>
         </div>
         <!-- Activity logs -->
-        <div class="w-1/4 mx-auto border border-black rounded-2xl bg-white">
+        <div class="w-1/4 mx-auto bg-white rounded-2xl">
             <div class="border-b-3 border-gray-300 border-dashed flex flex-col gap-2 items-center py-3 justify-center">
                 <div class="flex gap-3">
                     <img class="size-6" src="./assets/activity.png" alt="">
